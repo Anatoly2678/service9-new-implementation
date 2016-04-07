@@ -1,0 +1,14 @@
+RewriteEngine On
+#Options +FollowSymlinks
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !json\.php$
+#RewriteCond %{REQUEST_FILENAME} !Contract/Public/Contract$
+#   RewriteCond %{REQUEST_FILENAME} !.html$
+#    RewriteCond %{REQUEST_FILENAME} !.ru$
+#RewriteCond %{REQUEST_FILENAME} !Public/Contract/ProfitReport.php$
+#RewriteCond %{REQUEST_FILENAME} !Admin/avito$ 
+#RewriteCond %{REQUEST_FILENAME} !/$ 
+#RewriteRule ^Personal/?$ - [L]
+RewriteRule .* index.php [L]
